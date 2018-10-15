@@ -1,0 +1,16 @@
+configValue:
+  name: yinbo.shi
+  age: 18
+  sex: 男
+bean:
+  person:
+    name: 机枪兵
+    age: 18
+    number:  ${random.int}
+    uuid: ${random.uuid}
+    max: ${random.int(10)}
+    value: ${random.value}
+    greeting: hi,i'm  ${bean.person.name}
+spring:
+  profiles:
+    active: dev

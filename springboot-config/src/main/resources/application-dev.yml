@@ -1,0 +1,11 @@
+server:
+  port: 8000
+bean:
+  person:
+    name: 机枪兵-dev
+    age: 18
+    number:  ${random.int}
+    uuid: ${random.uuid}
+    max: ${random.int(10)}
+    value: ${random.value}
+    greeting: hi,i'm  ${bean.person.name}
