@@ -1,20 +1,5 @@
-# temp ignore
-*.log
-*.cache
-*.diff
-*.patch
-*.tmp
-
-# system ignore
-.DS_Store
-Thumbs.db
-
-gitlabci/.generated
-
+/target/
 !.mvn/wrapper/maven-wrapper.jar
-# maven ignore
-target/
-*.versionsBackup
 
 ### STS ###
 .apt_generated
