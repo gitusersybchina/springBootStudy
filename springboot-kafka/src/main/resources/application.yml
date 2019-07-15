@@ -1,0 +1,19 @@
+spring:
+  #使用原生spring kafka需要配置
+  kafka:
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAT_SERVERS:10.101.96.5:9092}
+    producer:
+    # 指定消息key和消息体的编解码方式
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      retries: 0
+    consumer:
+      group-id: hxcp-mdata
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      auto-commit-interval: 100ms
+      # 指定消息key和消息体的编解码方式
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  application:
+    name: springboot-kafka

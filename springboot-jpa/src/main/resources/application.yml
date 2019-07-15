@@ -6,6 +6,6 @@ spring:
     data-password: root
   jpa:
     hibernate:
-      ddl-auto: update  # 第一次创建表create  后面用update
+      ddl-auto: create  # 第一次创建表create  后面用update
       show-sql: true
 
